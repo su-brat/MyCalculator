@@ -4,23 +4,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     String expression;
-    EditText text;
+    TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         expression = "";
-        text = (EditText)findViewById(R.id.result);
+        text = (TextView) findViewById(R.id.result);
     }
 
     public void equals(View view) {
-        text.setText("" + eval(expression));
+        expression = Double.toString(eval(expression));
+        text.setText(expression);
     }
 
     public void clear(View view) {
