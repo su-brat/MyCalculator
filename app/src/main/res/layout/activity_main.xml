@@ -181,7 +181,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
-            android:text="sqrt"
+            android:text="+"
             android:textSize="20sp"
             android:onClick="onTap"/>
     </LinearLayout>
@@ -208,15 +208,16 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
-            android:text="cls"
+            android:text="sqrt"
             android:textSize="20sp"
-            android:onClick="clear"/>
+            android:onClick="onTap"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
-            android:text=""
-            android:textSize="20sp"/>
+            android:text="clear"
+            android:textSize="20sp"
+            android:onClick="clear"/>
     </LinearLayout>
 
 </LinearLayout>
